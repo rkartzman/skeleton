@@ -1,0 +1,19 @@
+.navbar {
+  background-color: white;
+  border: none;
+  .navbar-header {
+    display: none;
+  }
+  ul.navbar-nav {
+    li {
+      width: 25%;
+      float: left;
+
+      &.active {
+        > a {
+          background: none;
+        }
+      }
+    }
+  }
+}
