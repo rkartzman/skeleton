@@ -12,8 +12,8 @@ var handlebars = require('express-handlebars');
 
 keystone.init({
 
-	'name': 'skeleton',
-	'brand': 'skeleton',
+	'name': 'test',
+	'brand': 'test',
 	
 	'sass': 'public',
 	'static': 'public',
@@ -34,7 +34,7 @@ keystone.init({
 	'auto update': true,
 	'session': true,
 	'auth': true,
-	'user model': 'User'
+	'user model': 'Y'
 
 });
 
@@ -100,7 +100,7 @@ keystone.set('nav', {
 	'posts': ['posts', 'post-categories'],
 	'galleries': 'galleries',
 	'enquiries': 'enquiries',
-	'users': 'users'
+	'ys': 'ys'
 });
 
 // Start Keystone to connect to your database and initialise the web server

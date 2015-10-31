@@ -8,8 +8,8 @@
  */
 
 exports.create = {
-	User: [
-		{ 'name.first': 'Admin', 'name.last': 'User', email: 'dave@keystonejs.com', password: 'gobornny', isAdmin: true }
+	Y: [
+		{ 'name.first': 'Admin', 'name.last': 'User', email: 'david@keystone.com', password: 'gobornny', isAdmin: true }
 	]
 };
 

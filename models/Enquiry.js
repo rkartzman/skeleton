@@ -43,17 +43,17 @@ Enquiry.schema.methods.sendNotificationEmail = function(callback) {
 	
 	var enquiry = this;
 	
-	keystone.list('User').model.find().where('isAdmin', true).exec(function(err, admins) {
+	keystone.list('Y').model.find().where('isAdmin', true).exec(function(err, admins) {
 		
 		if (err) return callback(err);
 		
 		new keystone.Email('enquiry-notification').send({
 			to: admins,
 			from: {
-				name: 'skeleton',
-				email: 'contact@skeleton.com'
+				name: 'test',
+				email: 'contact@test.com'
 			},
-			subject: 'New Enquiry for skeleton',
+			subject: 'New Enquiry for test',
 			enquiry: enquiry
 		}, callback);
 		
