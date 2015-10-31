@@ -30,7 +30,7 @@ keystone.init({
 	}).engine,
 
 	'emails': 'templates/emails',
-
+	// commented out code
 
 	'auto update': true,
 	'session': true,
