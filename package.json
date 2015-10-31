@@ -1,5 +1,5 @@
 {
-  "name": "skeleton",
+  "name": "test",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
@@ -11,7 +11,7 @@
     "express-handlebars": "^1.1.0",
     "handlebars": "^2.0.0",
     "node-sass": "^3.3.2",
-    "node-sass-middleware": "^0.5.0", 
+    "node-sass-middleware": "^0.5.0",
     "dotenv": "^1.1.0"
   },
   "devDependencies": {
