@@ -1,6 +1,7 @@
 // Simulate config options from your production environment by
 // customising the .env file in your project's root folder.
 require('dotenv').load();
+require('api');
 
 // Require keystone
 var keystone = require('keystone');
@@ -11,7 +12,8 @@ var handlebars = require('express-handlebars');
 // and documentation.
 
 keystone.init({
-
+	'cloudinary config': { cloud_name: cloudName, api_key: cloudApiKey, api_secret: cloudApiSecret},
+	'cookie secret': cloudCookieSecret,
 	'name': 'skeleton',
 	'brand': 'skeleton',
 	
