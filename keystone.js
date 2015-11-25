@@ -7,6 +7,7 @@ require('api');
 var keystone = require('keystone');
 var handlebars = require('express-handlebars');
 
+
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
 // and documentation.
@@ -104,6 +105,42 @@ keystone.set('nav', {
 	'enquiries': 'enquiries',
 	'users': 'users'
 });
+
+
+exports.create = {
+	
+	User: [{
+		'name.full': 'Jed Watson',
+		email: 'jed@keystonejs.com',
+		password: 'admin',
+		isAdmin: true,
+		__ref: 'jed'
+	}],
+	
+	PostCategory: [{
+		name: 'Keystone JS',
+		__ref: 'keystone'
+	}, {
+		name: 'Node.js',
+		__ref: 'node'
+	}],
+	
+	Post: [{
+		title: 'A draft post',
+		author: 'jed',
+		'content.brief': 'This is an example draft post.',
+		categories: ['keystone', 'node']
+	}, {
+		title: 'A published post',
+		state: 'published',
+		author: 'jed',
+		publishedDate: '2014-04-12',
+		'content.brief': 'This post has been published!',
+		categories: 'node'
+	}]
+	
+};
+
 
 // Start Keystone to connect to your database and initialise the web server
 
